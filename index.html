@@ -10,12 +10,14 @@
   </style>
 </head>
 <body>
-<pre id="app">
+<pre id="json">
+<pre id="line">
 </div>
 
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
-document.getElementById('app').innerHTML = JSON.stringify(window.Telegram.WebApp.initDataUnsafe, null, 2);
+document.getElementById('json').innerHTML = JSON.stringify(window.Telegram.WebApp.initDataUnsafe, null, 2);
+document.getElementById('line').innerHTML = window.Telegram.WebApp.initData;
 </script>
 </body>
 </html>
